@@ -26,7 +26,8 @@
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
   {% endblock cdn_css %}
 
-  {% block css %}{% endblock %}
+  {% block css %}
+  {% endblock %}
 
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 </head>
@@ -40,15 +41,15 @@
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="/tournaments">SnapBox</a>
+          <a class="navbar-brand" href="{{ url_for('index') }}">SnapBox</a>
         </div>
 
         <div>
           <ul class="nav navbar-nav">
-            <li><a href="">Goals</a></li>
-            <li><a href="">Deliverables</a></li>
-            <li><a href="">Downloads</a></li>
-            <li><a href="">Team</a></li>
+            <li><a href="{{ url_for('goals') }}">Goals</a></li>
+            <li><a href="{{ url_for('deliverables') }}">Deliverables</a></li>
+            <li><a href="{{ url_for('downloads') }}">Downloads</a></li>
+            <li><a href="{{ url_for('team') }}">Team</a></li>
           </ul>
         </div>
       </div>

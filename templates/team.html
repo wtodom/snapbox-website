@@ -1,3 +1,27 @@
-Rainer Powell is an undergraduate student from Birmingham, AL, with aspirations to graduate with a Bachelor's Degree in Computer Science from the University of Alabama at the conclusion of the spring semester of 2014. Already an alumnus of this organization, he also holds degrees in Chemistry and Spanish and a minor in Japanese. An avid music lover, he has performed on violin with the student orchestra for two seasons and continues to play in local events in his spare time. He looks forward to pursuing an exciting career in software development following graduation.
+{% extends "base.html" %}
 
-Sent from my iPhone
+  {% block css %}
+  <style>
+  /* Move down content because we have a fixed navbar that is 50px tall */
+  body {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+  </style>
+  {% endblock css %}
+
+{% block content %}
+<div class="container">
+	<ul>
+		<li class="">
+			Weston Odom is a senior graduating in May 2014. Check out his <a href="http://www.github.com/wtodom" target="_blank">github</a> to see what he's been up to.
+		</li>
+		<li class="">
+			Rainer Powell is an undergraduate student from Birmingham, AL, with aspirations to graduate with a Bachelor's Degree in Computer Science from the University of Alabama at the conclusion of the spring semester of 2014. Already an alumnus of this organization, he also holds degrees in Chemistry and Spanish and a minor in Japanese. An avid music lover, he has performed on violin with the student orchestra for two seasons and continues to play in local events in his spare time. He looks forward to pursuing an exciting career in software development following graduation.
+		</li>
+		<li class="">
+			The second member of Team SnapBox. He eats sometimes. Sometimes e don't. There are times when he's not eating.
+		</li>
+	</ul>
+</div>
+{% endblock %}
