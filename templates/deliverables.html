@@ -14,4 +14,14 @@ padding-bottom: 20px;
 {% block page_class %}deliverables-page{% endblock %}
 
 {% block content %}
+<div class="container">
+	<ul>
+		<li class="">
+			<a href="{{ url_for('static', filename='SnapBoxSRS.docx') }}">SnapBox SRS Document</a>
+		</li>
+		<li class="">
+			<a href="{{ url_for('static', filename='SnapBoxSRS.pptx') }}">SnapBox SRS Presentation</a>
+		</li>
+	</ul>
+</div>
 {% endblock %}
